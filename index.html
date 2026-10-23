@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f3ed">
+    <meta name="description" content="A private presentation of three website design concepts for Dr. Ronak.">
+    <title>Dr. Ronak — Design Concepts</title>
+    <link rel="stylesheet" href="viewer.css">
+    <script src="viewer.js" defer></script>
+  </head>
+  <body>
+    <header class="presentation-bar">
+      <a class="presentation-brand" href="#" aria-label="Dr. Ronak design concepts, return to top">
+        <span class="brand-mark" aria-hidden="true">R.</span>
+        <span class="brand-copy">
+          <strong>Dr. Ronak</strong>
+          <span>PRIVATE DESIGN PRESENTATION</span>
+        </span>
+      </a>
+
+      <div class="switcher-wrap">
+        <span class="switcher-label">Design concepts</span>
+        <nav class="version-switcher" aria-label="Choose a design concept">
+          <span class="switcher-indicator" aria-hidden="true"></span>
+          <button class="version-button is-selected" type="button" data-version="v1" aria-pressed="true">V1</button>
+          <button class="version-button" type="button" data-version="v2" aria-pressed="false">V2</button>
+          <button class="version-button" type="button" data-version="v3" aria-pressed="false">V3</button>
+        </nav>
+      </div>
+
+      <span class="presentation-note"><span aria-hidden="true"></span>V1 · V2 · V3</span>
+    </header>
+
+    <main class="concept-stage" aria-label="Website design preview">
+      <div class="concept-stack">
+        <iframe
+          class="concept-frame is-active"
+          src="VERSIONS/V1/index.html"
+          title="Design concept V1"
+          data-version="v1"
+          aria-hidden="false"></iframe>
+        <iframe
+          class="concept-frame"
+          src="VERSIONS/V2/index.html"
+          title="Design concept V2"
+          data-version="v2"
+          aria-hidden="true"
+          tabindex="-1"></iframe>
+        <iframe
+          class="concept-frame"
+          src="VERSIONS/V3/index.html"
+          title="Design concept V3"
+          data-version="v3"
+          aria-hidden="true"
+          tabindex="-1"></iframe>
+      </div>
+      <p class="visually-hidden" aria-live="polite" aria-atomic="true" id="selection-status">Showing design concept V1</p>
+    </main>
+  </body>
+</html>
